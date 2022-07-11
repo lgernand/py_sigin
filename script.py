@@ -31,7 +31,11 @@ with open('users.txt', encoding='utf-8') as file:
 
 print("1. Sign in \n2. Sign up")
 
-user_selection = input()
+while(True):
+    user_selection = input()
+
+    if (user_selection == '1' or user_selection == '2'):
+        break
 
 if (user_selection == '1'):
     sign_in_success = 0
